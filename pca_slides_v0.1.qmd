@@ -1,0 +1,90 @@
+---
+title: "Understanding Principal Component Analysis (PCA)"
+author: "Hector Gavilanes, Gail Han, Michael Mezzano"
+format:
+  revealjs: 
+    theme: serif
+editor: visual
+---
+
+# What is PCA?
+
+-   Dimensionality reduction technique.
+-   Purpose:
+    -   Simplification of complex datasets.
+    -   Preservation of essential information.
+
+# Why Use PCA?
+
+-   Reducing Dimensionality: Simplify high-dimensional data.
+-   Visualizing Data: Help visualize data in lower dimensions.
+-   Noise Reduction: Eliminate less relevant features.
+-   Improved Model Performance: Enhance machine learning efficiency.
+
+# Methods
+
+-   Data Matrix: Start with a matrix X of size n x m.
+-   Centering: Subtract the mean of each feature.
+-   Covariance Matrix: Calculate the covariance matrix of the centered data.
+-   Select Principal Components: Choose top eigenvectors.
+
+# Singular Value Decomposition (SVD)
+
+-   Eigenvectors: Represent directions of maximum variance.
+-   Eigenvalues: Indicate the variance explained by each eigenvector.
+-   Sorting: Sort eigenvalues in descending order to select the most significant components.
+
+# Variance Explained
+
+-   Explained Variance Ratio: Calculate the ratio of each eigenvalue.
+-   Cumulative Variance: Plot cumulative explained variance to determine components to retain.
+
+# Dimensionality Reduction
+
+-   Reduce Dimensions: Transform data by multiplying with selected eigenvectors.
+-   New Feature Space: Data exists in a lower-dimensional feature space.
+
+# Visualization
+
+-   Data Projection: Visualize data in the reduced feature space.
+-   Scatterplots: Use scatterplots to visualize data distribution.
+
+# Assumptions and Limitations
+
+-   Interpretability: Loss of interpretability in transformed features.
+-   Loss of Information: Reducing dimensionality may result in some information loss.
+-   Scaling: Data scaling is important to avoid feature dominance.
+
+# Applications of PCA
+
+-   Image Compression: Reduce image size while preserving details.
+-   Face Recognition: Reduce facial feature dimensions for classification.
+-   Anomaly Detection: Identify anomalies in large datasets.
+-   Bioinformatics: Analyze gene expression data.
+
+# PCA in Machine Learning
+
+-   Feature Selection: Use PCA to select relevant features.
+-   Model Training: Enhance model performance by reducing dimensionality.
+-   Preprocessing: Standardize and normalize data before applying PCA.
+
+# Examples
+
+-   Dyalisis Dataset
+
+# Conclusion
+
+-   Summary: PCA is a valuable tool for dimensionality reduction and data visualization.
+-   Key Takeaways: Understand eigenvectors, eigenvalues, and explained variance.
+
+# Questions
+
+-   Open the floor for questions from the audience.
+
+# Thank You
+
+-   Contact Information
+
+# References
+
+-   List of sources and references used in the presentation.
