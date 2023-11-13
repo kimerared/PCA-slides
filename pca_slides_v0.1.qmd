@@ -1,11 +1,24 @@
 ---
-title: "Understanding Principal Component Analysis (PCA)"
-author: "Hector Gavilanes, Gail Han, Michael Mezzano"
+#title: "Understanding Principal Component Analysis (PCA)"
+#author: "Hector Gavilanes, Gail Han, Michael Mezzano"
 format:
   revealjs: 
     theme: serif
+    transition: convex
 editor: visual
 ---
+
+### 
+
+![](images/01-Preface.jpg){fig-align="center"}
+
+::: footer
+Hector Gavilanes, Gail Han, Michael Mezzano
+:::
+
+::: notes
+Speaker notes go here.
+:::
 
 # What is PCA?
 
@@ -38,6 +51,26 @@ editor: visual
 
 -   Explained Variance Ratio: Calculate the ratio of each eigenvalue.
 -   Cumulative Variance: Plot cumulative explained variance to determine components to retain.
+
+# 
+
+::: columns
+::: {.column width="40%"}
+## Objective
+
+-   Weighted Combination
+
+-   Maximal Variance Components
+:::
+
+::: {.column width="60%"}
+### High Variance vs
+
+### Low Variance
+
+![](images/01-Preface.jpg){width="Infinity"}
+:::
+:::
 
 # Dimensionality Reduction
 
