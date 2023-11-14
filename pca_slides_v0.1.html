@@ -437,21 +437,13 @@
 </ul>
 </section>
 
-<section id="pca-in-machine-learning" class="title-slide slide level1 center">
-<h1>PCA in Machine Learning</h1>
-<ul>
-<li>Feature Selection: Use PCA to select relevant features.</li>
-<li>Model Training: Enhance model performance by reducing dimensionality.</li>
-<li>Preprocessing: Standardize and normalize data before applying PCA.</li>
-</ul>
-</section>
-
 <section id="dataset-overview" class="title-slide slide level1 center">
 <h1>Dataset Overview</h1>
 <ul>
 <li><p>39 variables, or features.</p></li>
-<li><p>State-level averages.</p></li>
+<li><p>55 Observations.</p></li>
 <li><p>Administered to In-Center Hemodialysis Survey.</p></li>
+<li><p>State-level averages.</p></li>
 <li><p>Dialysis Quality measures.</p></li>
 <li><p>Released on July 19, 2023.</p></li>
 <li><p><a href="https://data.cms.gov/provider-data/dataset/2fpu-cgbb">data.cms.gov.</a></p></li>
@@ -462,6 +454,45 @@
 <p>Healthcare Providers and Systems (CAHPS).”</p>
 </div>
 </div>
+</section>
+
+<section id="variables-features" class="title-slide slide level1 center">
+<h1>Variables / Features</h1>
+<p><strong>Index Variable:</strong></p>
+<ul>
+<li>“State,” 50 states &amp; 6 U.S. territories.</li>
+</ul>
+<p><strong>Response Variables:</strong></p>
+<ul>
+<li><p>24 variables align with patient care quality ratings in dialysis facilities.</p></li>
+<li><p>Transfusions, fistula usage, infections, hospitalizations, incident waitlisting, &amp; readmissions.</p></li>
+</ul>
+</section>
+
+<section id="variables-features-1" class="title-slide slide level1 center">
+<h1>Variables / Features</h1>
+<p><strong>Classification of Dialysis Patients:</strong></p>
+<ul>
+<li>14 variables based on dialysis adequacy (Kt/V), type of dialysis, normalized protein catabolic rate (nPCR), hypercalcemia level, serum phosphorus level, and average hemoglobin level.</li>
+</ul>
+</section>
+
+<section id="dataset-selection-rationale" class="title-slide slide level1 center">
+<h1>Dataset Selection Rationale</h1>
+<ul>
+<li><p>Driven by multicollinearity.</p></li>
+<li><p>Certain variables less significant in explaining variability of response variables.</p></li>
+<li><p>All variables are numeric, except the index variable.</p></li>
+</ul>
+</section>
+
+<section id="pca-in-machine-learning" class="title-slide slide level1 center">
+<h1>PCA in Machine Learning</h1>
+<ul>
+<li>Feature Selection: Use PCA to select relevant features.</li>
+<li>Model Training: Enhance model performance by reducing dimensionality.</li>
+<li>Preprocessing: Standardize and normalize data before applying PCA.</li>
+</ul>
 </section>
 
 <section id="conclusion" class="title-slide slide level1 center">

@@ -92,19 +92,15 @@ Hector Gavilanes, Gail Han, Michael Mezzano
 -   Anomaly Detection: Identify anomalies in large datasets.
 -   Bioinformatics: Analyze gene expression data.
 
-# PCA in Machine Learning
-
--   Feature Selection: Use PCA to select relevant features.
--   Model Training: Enhance model performance by reducing dimensionality.
--   Preprocessing: Standardize and normalize data before applying PCA.
-
 # Dataset Overview
 
 -   39 variables, or features.
 
--   State-level averages.
+-   55 Observations.
 
 -   Administered to In-Center Hemodialysis Survey.
+
+-   State-level averages.
 
 -   Dialysis Quality measures.
 
@@ -121,6 +117,38 @@ Healthcare Providers and Systems (CAHPS)."
 
 </div>
 :::
+
+# Variables / Features
+
+**Index Variable:**
+
+-   "State," 50 states & 6 U.S. territories.
+
+**Response Variables:**
+
+-   24 variables align with patient care quality ratings in dialysis facilities.
+
+-   Transfusions, fistula usage, infections, hospitalizations, incident waitlisting, & readmissions.
+
+# Variables / Features
+
+**Classification of Dialysis Patients:**
+
+-   14 variables based on dialysis adequacy (Kt/V), type of dialysis, normalized protein catabolic rate (nPCR), hypercalcemia level, serum phosphorus level, and average hemoglobin level.
+
+# Dataset Selection Rationale
+
+-   Driven by multicollinearity.
+
+-   Certain variables less significant in explaining variability of response variables.
+
+-   All variables are numeric, except the index variable.
+
+# PCA in Machine Learning
+
+-   Feature Selection: Use PCA to select relevant features.
+-   Model Training: Enhance model performance by reducing dimensionality.
+-   Preprocessing: Standardize and normalize data before applying PCA.
 
 # Conclusion
 
