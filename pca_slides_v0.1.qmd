@@ -144,6 +144,18 @@ Healthcare Providers and Systems (CAHPS)."
 
 -   All variables are numeric, except the index variable.
 
+# Data Preparation  {.smaller}
+
+-   Efficient removal of white spaces in the dataset.
+
+-   Editing variable names to enhance readability and meaninful.
+
+-   **Example:**
+
+    -   Original: "Percentage.Of.Adult..Patients.With.Hypercalcemia..Serum.Calcium.Greater.Than.10.2.Mg.dL."
+
+    -   Transformed: "hypercalcemia_calcium \> 10.2Mg."
+
 # PCA in Machine Learning
 
 -   Feature Selection: Use PCA to select relevant features.
@@ -152,7 +164,7 @@ Healthcare Providers and Systems (CAHPS)."
 
 # Conclusion
 
--   Summary: PCA is a valuable tool for dimensionality reduction and data visualization.
+-   Summary: PCA is an unsupervised learning technique for dimensionality reduction and data visualization.
 -   Key Takeaways: Understand eigenvectors, eigenvalues, and explained variance.
 
 # Questions
