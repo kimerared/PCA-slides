@@ -92,11 +92,16 @@ Hector Gavilanes, Gail Han, Michael Mezzano
 -   Anomaly Detection: Identify anomalies in large datasets.
 -   Bioinformatics: Analyze gene expression data.
 
-# Dataset Overview
+# Dataset
+
+::: panel-tabset
+### Overview
 
 -   39 variables, or features.
 
 -   55 Observations.
+
+### Description
 
 -   Administered to In-Center Hemodialysis Survey.
 
@@ -104,9 +109,12 @@ Hector Gavilanes, Gail Han, Michael Mezzano
 
 -   Dialysis Quality measures.
 
+### Source
+
 -   Released on July 19, 2023.
 
 -   [data.cms.gov.](https://data.cms.gov/provider-data/dataset/2fpu-cgbb)
+:::
 
 ::: footer
 <div>
@@ -116,6 +124,27 @@ Data Obtained from "Consumer Assessment of
 Healthcare Providers and Systems (CAHPS)."
 
 </div>
+:::
+
+# Variables / Features
+
+::: panel-tabset
+### Index
+
+-   "State," 50 states & 6 U.S. territories.
+-   Categorical feature removed from model.
+
+### Response
+
+-   24 features: patient care quality ratings.
+-   Transfusions, fistula usage, infections,
+-   hospitalizations, incident waitlisting, & readmissions.
+
+### Dialysis
+
+-   14 features: dialysis adequacy (Kt/V), type of dialysis,
+-   normalized protein catabolic rate (nPCR), hypercalcemia level,
+-   serum phosphorus level, & average hemoglobin level.
 :::
 
 # Variables / Features
@@ -144,7 +173,7 @@ Healthcare Providers and Systems (CAHPS)."
 
 -   All variables are numeric, except the index variable.
 
-# Data Preparation  {.smaller}
+# Data Preparation {.smaller}
 
 -   Efficient removal of white spaces in the dataset.
 

@@ -8,7 +8,7 @@
 <link href="pca_slides_v0.1_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="pca_slides_v0.1_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="pca_slides_v0.1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.433">
+  <meta name="generator" content="quarto-1.3.450">
 
   <title>pca_slides_v0.1</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -437,17 +437,32 @@
 </ul>
 </section>
 
-<section id="dataset-overview" class="title-slide slide level1 center">
-<h1>Dataset Overview</h1>
+<section id="dataset" class="title-slide slide level1 center">
+<h1>Dataset</h1>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Overview</a></li><li><a href="#tabset-1-2">Description</a></li><li><a href="#tabset-1-3">Source</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
 <ul>
 <li><p>39 variables, or features.</p></li>
 <li><p>55 Observations.</p></li>
+</ul>
+</div>
+<div id="tabset-1-2">
+<ul>
 <li><p>Administered to In-Center Hemodialysis Survey.</p></li>
 <li><p>State-level averages.</p></li>
 <li><p>Dialysis Quality measures.</p></li>
+</ul>
+</div>
+<div id="tabset-1-3">
+<ul>
 <li><p>Released on July 19, 2023.</p></li>
 <li><p><a href="https://data.cms.gov/provider-data/dataset/2fpu-cgbb">data.cms.gov.</a></p></li>
 </ul>
+</div>
+</div>
+</div>
 <div class="footer">
 <div>
 <p>Data Obtained from “Consumer Assessment of</p>
@@ -457,6 +472,35 @@
 </section>
 
 <section id="variables-features" class="title-slide slide level1 center">
+<h1>Variables / Features</h1>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Index</a></li><li><a href="#tabset-2-2">Response</a></li><li><a href="#tabset-2-3">Dialysis</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<ul>
+<li>“State,” 50 states &amp; 6 U.S. territories.</li>
+<li>Categorical feature removed from model.</li>
+</ul>
+</div>
+<div id="tabset-2-2">
+<ul>
+<li>24 features: patient care quality ratings.</li>
+<li>Transfusions, fistula usage, infections,</li>
+<li>hospitalizations, incident waitlisting, &amp; readmissions.</li>
+</ul>
+</div>
+<div id="tabset-2-3">
+<ul>
+<li>14 features: dialysis adequacy (Kt/V), type of dialysis,</li>
+<li>normalized protein catabolic rate (nPCR), hypercalcemia level,</li>
+<li>serum phosphorus level, &amp; average hemoglobin level.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="variables-features-1" class="title-slide slide level1 center">
 <h1>Variables / Features</h1>
 <p><strong>Index Variable:</strong></p>
 <ul>
@@ -469,7 +513,7 @@
 </ul>
 </section>
 
-<section id="variables-features-1" class="title-slide slide level1 center">
+<section id="variables-features-2" class="title-slide slide level1 center">
 <h1>Variables / Features</h1>
 <p><strong>Classification of Dialysis Patients:</strong></p>
 <ul>
