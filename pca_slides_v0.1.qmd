@@ -6,6 +6,11 @@ format:
     theme: serif
     transition: convex
 editor: visual
+data:
+  embed-resources: html4, html5, reveal.js
+execute:
+  echo: false
+  warning: false
 ---
 
 ### 
