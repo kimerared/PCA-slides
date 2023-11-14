@@ -138,32 +138,14 @@ Healthcare Providers and Systems (CAHPS)."
 
 -   24 features: patient care quality ratings.
 -   Transfusions, fistula usage, infections,
--   hospitalizations, incident waitlisting, & readmissions.
+-   Hospitalizations, incident waitlisting, & readmissions.
 
 ### Dialysis
 
 -   14 features: dialysis adequacy (Kt/V), type of dialysis,
--   normalized protein catabolic rate (nPCR), hypercalcemia level,
--   serum phosphorus level, & average hemoglobin level.
+-   Serum phosphorus level, & average hemoglobin level,
+-   Normalized protein catabolic rate (nPCR), hypercalcemia level.
 :::
-
-# Variables / Features
-
-**Index Variable:**
-
--   "State," 50 states & 6 U.S. territories.
-
-**Response Variables:**
-
--   24 variables align with patient care quality ratings in dialysis facilities.
-
--   Transfusions, fistula usage, infections, hospitalizations, incident waitlisting, & readmissions.
-
-# Variables / Features
-
-**Classification of Dialysis Patients:**
-
--   14 variables based on dialysis adequacy (Kt/V), type of dialysis, normalized protein catabolic rate (nPCR), hypercalcemia level, serum phosphorus level, and average hemoglobin level.
 
 # Dataset Selection Rationale
 
