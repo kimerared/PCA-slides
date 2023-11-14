@@ -16,10 +16,6 @@ editor: visual
 Hector Gavilanes, Gail Han, Michael Mezzano
 :::
 
-::: notes
-Speaker notes go here.
-:::
-
 # What is PCA?
 
 -   Dimensionality reduction technique.
@@ -74,6 +70,7 @@ Speaker notes go here.
 
 # Dimensionality Reduction
 
+-   Unsupervised Learning.
 -   Reduce Dimensions: Transform data by multiplying with selected eigenvectors.
 -   New Feature Space: Data exists in a lower-dimensional feature space.
 
@@ -101,9 +98,29 @@ Speaker notes go here.
 -   Model Training: Enhance model performance by reducing dimensionality.
 -   Preprocessing: Standardize and normalize data before applying PCA.
 
-# Examples
+# Dataset Overview
 
--   Dyalisis Dataset
+-   39 variables, or features.
+
+-   State-level averages.
+
+-   Administered to In-Center Hemodialysis Survey.
+
+-   Dialysis Quality measures.
+
+-   Released on July 19, 2023.
+
+-   [data.cms.gov.](https://data.cms.gov/provider-data/dataset/2fpu-cgbb)
+
+::: footer
+<div>
+
+Data Obtained from "Consumer Assessment of
+
+Healthcare Providers and Systems (CAHPS)."
+
+</div>
+:::
 
 # Conclusion
 
