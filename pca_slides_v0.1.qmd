@@ -6,8 +6,8 @@ format:
     theme: serif
     transition: convex
 editor: visual
-data:
-  embed-resources: html4, html5, reveal.js
+rendering:
+  embed-resources: true
 execute:
   echo: false
   warning: false
