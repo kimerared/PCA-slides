@@ -23,6 +23,7 @@ Hector Gavilanes, Gail Han, Michael Mezzano
 
 # What is PCA?
 
+-   Principal Component Analysis (PCA)
 -   Dimensionality reduction technique.
 -   Purpose:
     -   Simplification of complex datasets.
