@@ -5,9 +5,8 @@ format:
   revealjs: 
     theme: serif
     transition: convex
+    embed-resources: true
 editor: visual
-rendering:
-  embed-resources: true
 execute:
   echo: false
   warning: false
