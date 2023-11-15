@@ -157,21 +157,25 @@ Healthcare Providers and Systems (CAHPS)."
 
 -   Driven by multicollinearity.
 
--   Certain variables less significant in explaining variability of response variables.
+-   Features less significant in explaining variability.
 
 -   All variables are numeric, except the index variable.
 
-# Data Preparation {.smaller}
+# Data Preparation
+
+::: {.panel-tabset style="font-size: 85%;"}
+### Editing
 
 -   Efficient removal of white spaces in the dataset.
 
--   Editing variable names to enhance readability and meaninful.
+-   Editing variable names to enhance readability and meaningful.
 
--   **Example:**
+### Example
 
-    -   Original: "Percentage.Of.Adult..Patients.With.Hypercalcemia..Serum.Calcium.Greater.Than.10.2.Mg.dL."
+`Original:` "Percentage.Of.Adult..Patients.With.Hypercalcemia..Serum.Calcium.Greater.Than.10.2.Mg.dL."
 
-    -   Transformed: "hypercalcemia_calcium \> 10.2Mg."
+`Edited:` "hypercalcemia_calcium \> 10.2Mg."
+:::
 
 # PCA in Machine Learning
 

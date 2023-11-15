@@ -505,22 +505,28 @@
 <h1>Dataset Selection Rationale</h1>
 <ul>
 <li><p>Driven by multicollinearity.</p></li>
-<li><p>Certain variables less significant in explaining variability of response variables.</p></li>
+<li><p>Features less significant in explaining variability.</p></li>
 <li><p>All variables are numeric, except the index variable.</p></li>
 </ul>
 </section>
 
-<section id="data-preparation" class="title-slide slide level1 smaller center">
+<section id="data-preparation" class="title-slide slide level1 center">
 <h1>Data Preparation</h1>
+<div class="panel-tabset" style="font-size: 85%;">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Editing</a></li><li><a href="#tabset-3-2">Example</a></li></ul>
+<div class="tab-content" style="font-size: 85%;">
+<div id="tabset-3-1">
 <ul>
 <li><p>Efficient removal of white spaces in the dataset.</p></li>
-<li><p>Editing variable names to enhance readability and meaninful.</p></li>
-<li><p><strong>Example:</strong></p>
-<ul>
-<li><p>Original: “Percentage.Of.Adult..Patients.With.Hypercalcemia..Serum.Calcium.Greater.Than.10.2.Mg.dL.”</p></li>
-<li><p>Transformed: “hypercalcemia_calcium &gt; 10.2Mg.”</p></li>
-</ul></li>
+<li><p>Editing variable names to enhance readability and meaningful.</p></li>
 </ul>
+</div>
+<div id="tabset-3-2">
+<p><code>Original:</code> “Percentage.Of.Adult..Patients.With.Hypercalcemia..Serum.Calcium.Greater.Than.10.2.Mg.dL.”</p>
+<p><code>Edited:</code> “hypercalcemia_calcium &gt; 10.2Mg.”</p>
+</div>
+</div>
+</div>
 </section>
 
 <section id="pca-in-machine-learning" class="title-slide slide level1 center">
