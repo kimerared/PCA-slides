@@ -207,29 +207,32 @@ legend("topright", legend = c("Vector 1", "Vector 2"), col = c("blue", "red"), l
 
 ```{r}
 library(ggplot2)
+library(scatterplot3d)
+library(MASS)  # For the mvrnorm function
+library(rgl)
+# Set the random number generator seed
+set.seed(99)
 
-# Create orthogonal vectors
-vector1 <- c(2, 3)
-vector2 <- c(-3, 2)
+# Generate multivariate normal distribution
 
-# Create a data frame with the vectors
-vectors_df <- data.frame(x = c(0, vector1[1], vector2[1]),
-                         y = c(0, vector1[2], vector2[2]),
-                         group = c("Origin", "Vector 1", "Vector 2"))
+X <- mvrnorm(n = 50, mu = c(0, 0, 0), Sigma = matrix(c(1, 0.2, 0.7, 0.2, 1, 0, 0.7, 0, 1), nrow = 3))
 
-# Create scatter points
-points_df <- data.frame(x = c(1, -2),
-                        y = c(2, -1))
+# Create a 3D scatter plot
+scatterplot3d(X[, 1], X[, 2], X[, 3], color = "blue", pch = 16, grid = TRUE, main = "3D Scatter Plot")
 
-# Create a ggplot with vectors and scatter points
-ggplot() +
-  geom_segment(data = vectors_df, aes(x = x[1], y = y[1], xend = x[2], yend = y[2], color = group), arrow = arrow(length = unit(0.2, "cm"))) +
-  geom_point(data = points_df, aes(x = x, y = y), color = "green", size = 3) +
-  labs(x = "X-axis", y = "Y-axis", title = "Orthogonal Vectors and Scatter Points") +
-  theme_minimal() +
-  theme(legend.position = "top") +
-  scale_color_manual(values = c("black", "blue", "red"), guide = guide_legend(title = NULL, override.aes = list(size = 4))) +
-  guides(color = guide_legend(override.aes = list(size = 4)))
+# Set axis limits
+maxlim <- max(abs(X)) * 1.1
+scatterplot3d(X[, 1], X[, 2], X[, 3], color = "blue", pch = 16, grid = TRUE, main = "3D Scatter Plot",
+              xlim = c(-maxlim, maxlim), ylim = c(-maxlim, maxlim), zlim = c(-maxlim, maxlim))
+
+# Set equal aspect ratio
+aspect3d(1)
+
+# Set the view angle
+#rgl.postscript('3d_plot.png', fmt = 'png', w = 800, h = 800)
+
+
+
 
 ```
 
