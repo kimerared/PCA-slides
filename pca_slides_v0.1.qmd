@@ -182,6 +182,57 @@ Healthcare Providers and Systems (CAHPS)."
 -   Model Training: Enhance model performance by reducing dimensionality.
 -   Preprocessing: Standardize and normalize data before applying PCA.
 
+# Orthogonality
+
+```{r}
+# Create orthogonal vectors
+vector1 <- c(2, 3)
+vector2 <- c(-3, 2)
+
+# Plot the vectors
+plot(c(0, vector1[1]), c(0, vector1[2]), type = "n", xlim = c(-5, 5), ylim = c(-5, 5), xlab = "X-axis", ylab = "Y-axis")
+arrows(0, 0, vector1[1], vector1[2], length = 0.1, angle = 20, col = "blue")
+arrows(0, 0, vector2[1], vector2[2], length = 0.1, angle = 20, col = "red")
+
+# Add labels
+text(vector1[1], vector1[2], "Vector 1", pos = 4, col = "blue")
+text(vector2[1], vector2[2], "Vector 2", pos = 2, col = "red")
+
+# Add a legend
+legend("topright", legend = c("Vector 1", "Vector 2"), col = c("blue", "red"), lty = 1)
+
+```
+
+# Orthogonality V1
+
+```{r}
+library(ggplot2)
+
+# Create orthogonal vectors
+vector1 <- c(2, 3)
+vector2 <- c(-3, 2)
+
+# Create a data frame with the vectors
+vectors_df <- data.frame(x = c(0, vector1[1], vector2[1]),
+                         y = c(0, vector1[2], vector2[2]),
+                         group = c("Origin", "Vector 1", "Vector 2"))
+
+# Create scatter points
+points_df <- data.frame(x = c(1, -2),
+                        y = c(2, -1))
+
+# Create a ggplot with vectors and scatter points
+ggplot() +
+  geom_segment(data = vectors_df, aes(x = x[1], y = y[1], xend = x[2], yend = y[2], color = group), arrow = arrow(length = unit(0.2, "cm"))) +
+  geom_point(data = points_df, aes(x = x, y = y), color = "green", size = 3) +
+  labs(x = "X-axis", y = "Y-axis", title = "Orthogonal Vectors and Scatter Points") +
+  theme_minimal() +
+  theme(legend.position = "top") +
+  scale_color_manual(values = c("black", "blue", "red"), guide = guide_legend(title = NULL, override.aes = list(size = 4))) +
+  guides(color = guide_legend(override.aes = list(size = 4)))
+
+```
+
 # Conclusion
 
 -   Summary: PCA is an unsupervised learning technique for dimensionality reduction and data visualization.
