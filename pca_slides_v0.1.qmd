@@ -10,14 +10,31 @@ editor: visual
 execute:
   echo: false
   warning: false
+project:
+  type: website
+  output-dir: docs
 ---
 
 ### 
 
 ![](images/01-Preface.jpg){fig-align="center"}
 
-::: footer
-Hector Gavilanes, Gail Han, Michael Mezzano
+# Authors
+
+</br>
+
+|                      |                           |
+|----------------------|---------------------------|
+| Hector R. Gavilanes  | Chief Information Officer |
+| Gail Han             | Chief Operating Officer   |
+| Michael Mezzano      | Chief Technology Officer  |
+
+</br>
+
+::: {#date style="text-align: right;"}
+University of West Florida
+
+November 2023
 :::
 
 # What is PCA?
