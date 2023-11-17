@@ -10,9 +10,6 @@ editor: visual
 execute:
   echo: false
   warning: false
-project:
-  type: website
-  output-dir: docs
 ---
 
 ### 
@@ -23,11 +20,11 @@ project:
 
 </br>
 
-|                      |                           |
-|----------------------|---------------------------|
-| Hector R. Gavilanes  | Chief Information Officer |
-| Gail Han             | Chief Operating Officer   |
-| Michael Mezzano      | Chief Technology Officer  |
+|                     |                           |
+|---------------------|---------------------------|
+| Hector R. Gavilanes | Chief Information Officer |
+| Gail Han            | Chief Operating Officer   |
+| Michael Mezzano     | Chief Technology Officer  |
 
 </br>
 
@@ -148,6 +145,10 @@ Healthcare Providers and Systems (CAHPS)."
 </div>
 :::
 
+# Dataset Description {style="text-align:center;"}
+
+![](images/dataset_files/01-overall-description.png){fig-align="center" width="720"}
+
 # Variables / Features
 
 ::: panel-tabset
@@ -175,7 +176,9 @@ Healthcare Providers and Systems (CAHPS)."
 
 -   Features less significant in explaining variability.
 
--   All variables are numeric, except the index variable.
+-   All variables are numeric
+
+-   Index (categorical) variable.
 
 # Data Preparation
 
@@ -193,65 +196,45 @@ Healthcare Providers and Systems (CAHPS)."
 `Edited:` "hypercalcemia_calcium \> 10.2Mg."
 :::
 
+# Missing Values {style="text-align:center;"}
+
+![](images/dataset_files/02-missing_observations.png){fig-align="center" width="800"}
+
+-   34 missing values.
+
+-   Imputation of missing values using the $Mean$ ($\mu$)
+
+# Distribution {style="text-align:center;"}
+
+![](images/dataset_files/03-distribution.png){fig-align="center"}
+
+-   Normality is not assumed.
+
+# QQ-Plot of Residuals {style="text-align:center;"}
+
+![](images/dataset_files/04-outliers.png){fig-align="center"}
+
+-   Outliers are present through the entire dataset
+
+# Standardization {style="text-align:center;"}
+
+-   Mean ($\mu$=0); Variance ($\sigma$= 1)
+
+    $$
+    Z = \frac{{ x - \mu }}{{ \sigma }}
+    $$
+
+    $$
+    Z \sim N(0,1)
+    $$
+
+# Outliers & Leverage
+
 # PCA in Machine Learning
 
 -   Feature Selection: Use PCA to select relevant features.
 -   Model Training: Enhance model performance by reducing dimensionality.
 -   Preprocessing: Standardize and normalize data before applying PCA.
-
-# Orthogonality
-
-```{r}
-# Create orthogonal vectors
-vector1 <- c(2, 3)
-vector2 <- c(-3, 2)
-
-# Plot the vectors
-plot(c(0, vector1[1]), c(0, vector1[2]), type = "n", xlim = c(-5, 5), ylim = c(-5, 5), xlab = "X-axis", ylab = "Y-axis")
-arrows(0, 0, vector1[1], vector1[2], length = 0.1, angle = 20, col = "blue")
-arrows(0, 0, vector2[1], vector2[2], length = 0.1, angle = 20, col = "red")
-
-# Add labels
-text(vector1[1], vector1[2], "Vector 1", pos = 4, col = "blue")
-text(vector2[1], vector2[2], "Vector 2", pos = 2, col = "red")
-
-# Add a legend
-legend("topright", legend = c("Vector 1", "Vector 2"), col = c("blue", "red"), lty = 1)
-
-```
-
-# Orthogonality V1
-
-```{r}
-library(ggplot2)
-library(scatterplot3d)
-library(MASS)  # For the mvrnorm function
-library(rgl)
-# Set the random number generator seed
-set.seed(99)
-
-# Generate multivariate normal distribution
-
-X <- mvrnorm(n = 50, mu = c(0, 0, 0), Sigma = matrix(c(1, 0.2, 0.7, 0.2, 1, 0, 0.7, 0, 1), nrow = 3))
-
-# Create a 3D scatter plot
-scatterplot3d(X[, 1], X[, 2], X[, 3], color = "blue", pch = 16, grid = TRUE, main = "3D Scatter Plot")
-
-# Set axis limits
-maxlim <- max(abs(X)) * 1.1
-scatterplot3d(X[, 1], X[, 2], X[, 3], color = "blue", pch = 16, grid = TRUE, main = "3D Scatter Plot",
-              xlim = c(-maxlim, maxlim), ylim = c(-maxlim, maxlim), zlim = c(-maxlim, maxlim))
-
-# Set equal aspect ratio
-aspect3d(1)
-
-# Set the view angle
-#rgl.postscript('3d_plot.png', fmt = 'png', w = 800, h = 800)
-
-
-
-
-```
 
 # Conclusion
 
