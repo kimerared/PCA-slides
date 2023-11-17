@@ -230,6 +230,24 @@ Healthcare Providers and Systems (CAHPS)."
 
 # Outliers & Leverage
 
+::: columns
+::: {.column width="50%" style="font-size: 85%;"}
+-   3 Outliers
+
+-   No leverage
+
+![](images/outliers_3.png)
+:::
+
+::: {.column width="50%" style="font-size: 85%;"}
+-   Minimal difference.
+
+-   No observations removed.
+
+![](images/outliers_2.png)
+:::
+:::
+
 # PCA in Machine Learning
 
 -   Feature Selection: Use PCA to select relevant features.
