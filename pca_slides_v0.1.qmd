@@ -118,7 +118,9 @@ November 2023
 
 -   39 variables, or features.
 
--   55 Observations.
+-   56 Observations.
+
+-   "State" represents 50 states & 6 U.S. territories.
 
 ### Description
 
@@ -145,23 +147,21 @@ Healthcare Providers and Systems (CAHPS)."
 </div>
 :::
 
-# Dataset Description {style="text-align:center;"}
-
-![](images/dataset_files/01-overall-description.png){fig-align="center" width="720"}
-
 # Variables / Features
 
 ::: panel-tabset
 ### Index
 
--   "State," 50 states & 6 U.S. territories.
--   Categorical feature removed from model.
+-   39 variables, or features.
+-   56 observations.
+-   "State" represents 50 states & 6 U.S. territories.
+-   Categorical index feature removed from model.
 
 ### Response
 
--   24 features: patient care quality ratings.
+-   24 features: patient care quality ratings,
 -   Transfusions, fistula usage, infections,
--   Hospitalizations, incident waitlisting, & readmissions.
+-   Hospitalizations, incident waitlisting & readmissions.
 
 ### Dialysis
 
@@ -169,6 +169,47 @@ Healthcare Providers and Systems (CAHPS)."
 -   Serum phosphorus level, & average hemoglobin level,
 -   Normalized protein catabolic rate (nPCR), hypercalcemia level.
 :::
+
+# Dataset
+
+::: {.panel-tabset style="font-size: 85%;"}
+### Overview
+
+-   39 variables, or features.
+-   56 observations.
+-   State-level averages.
+-   "State" represents 50 states & 6 U.S. territories.
+
+### Description
+
+-   Administered to In-Center Hemodialysis Survey.
+-   Dialysis Quality measures.
+
+### Patient Care
+
+-   24 features: patient care quality ratings,
+-   Transfusions, fistula usage, infections,
+-   Hospitalizations, incident waitlisting & readmissions.
+
+### Dialysis
+
+-   14 features: dialysis adequacy (Kt/V), type of dialysis,
+-   Serum phosphorus level, & average hemoglobin level,
+-   Normalized protein catabolic rate (nPCR), hypercalcemia level.
+
+### Source
+
+-   Released on July 19, 2023.
+-   [data.cms.gov.](https://data.cms.gov/provider-data/dataset/2fpu-cgbb)
+:::
+
+# Dataset Summary {style="text-align:center;"}
+
+![](images/dataset_files/01-overall-description.png){fig-align="center" width="720"}
+
+-   PCA is designed for continuous numerical data.
+
+-   Categorical index feature removed from model.
 
 # Dataset Selection Rationale
 
@@ -218,7 +259,7 @@ Healthcare Providers and Systems (CAHPS)."
 
 # Standardization {style="text-align:center;"}
 
--   Mean ($\mu$=0); Variance ($\sigma$= 1)
+-   Mean ($\mu$=0); Standard Deviation ($\sigma$= 1)
 
     $$
     Z = \frac{{ x - \mu }}{{ \sigma }}
